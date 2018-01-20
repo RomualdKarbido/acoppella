@@ -56,7 +56,6 @@
 	&__dropbox {
 		background: rgba(255, 255, 255, .99);
 		height: 100vh;
-		
 		right: 5%;
 		width: 960px;
 		position: fixed;
@@ -64,7 +63,7 @@
 		justify-content: center;
 		z-index: 10;
 		display: none;
-		transition: all 0.2s;
+		transition: all 0.3s;
 		top: -110vh;
 		display: flex;
 		opacity: 0;
@@ -88,6 +87,21 @@
 		text-decoration: none;
 		&.active {
 			color: @orange
+		}
+		&:nth-child(5) {
+			-webkit-animation-delay: 0.1s;
+		}
+		&:nth-child(4) {
+			-webkit-animation-delay: 0.4s;
+		}
+		&:nth-child(3) {
+			-webkit-animation-delay: 0.8s;
+		}
+		&:nth-child(2) {
+			-webkit-animation-delay: 1.2s;
+		}
+		&:nth-child(1) {
+			-webkit-animation-delay: 1.6s;
 		}
 	}
 	

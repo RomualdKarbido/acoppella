@@ -12,6 +12,7 @@ $(document).ready(function() {
 	$('.top-menu').click(function() {
 		$(this).toggleClass('active');
 		$('.top-menu__dropbox').toggleClass('active');
+		$('.top-menu__item').toggleClass('animated bounceInDown');
 	});
 	$('.top-menu__item').click(function() {
 		$('.top-menu__item').removeClass('active');
@@ -20,12 +21,13 @@ $(document).ready(function() {
 		setTimeout(function() {
 			$('.top-menu__dropbox').removeClass('active');
 			$('.top-menu').removeClass('active');
+			$('.top-menu__item').removeClass('animated bounceInDown');
 
-		}, 1000);
+		}, 500);
 		
 	});
 
-	
+	//плавный скроллинг
 	$(".top-menu__item").click(function() {
       $("html, body").animate({
          scrollTop: $($(this).attr("href")).offset().top + "px"
@@ -36,5 +38,6 @@ $(document).ready(function() {
       return false;
    });
 
+	
 
 })
