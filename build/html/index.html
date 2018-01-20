@@ -8,10 +8,12 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
 	<link href="../css/style.css" rel="stylesheet">
 	<?xml-stylesheet type="text/css" href="./css/style.css"?>
+	<link href="../fonts/MaterialDesign-Webfont-master/css/materialdesignicons.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 	
 	<script src="../scripts/jquery-3.2.1.min.js"></script>
 	<script src="../scripts/slick.min.js"></script>
+	
 
 	
 	
@@ -23,9 +25,32 @@
 
 
 
-<div class="top-block">
+<div class="top-block" id="home">
     <div class="top-block__box">
+        <div class="top-block__box-top">
+            
+         
         <a href="#" class="top-block__logo">a cappella</a>
+        
+        <div class="top-menu">
+            <div class="top-menu__btn">
+                <div class="top-menu__line top-menu__line_top"></div>
+                <div class="top-menu__line top-menu__line_midle"></div>
+                <div class="top-menu__line top-menu__line_bottom"></div>
+            </div>
+           
+        </div>
+        <div class="top-menu__dropbox">
+            <div class="top-menu__list">
+                <a href="#home" class="top-menu__item active">Главная</a>
+                <a href="#target"  class="top-menu__item">Наша цель</a>
+                <a href="#approach"  class="top-menu__item">Наш подход</a>
+                <a href="#portfolio"  class="top-menu__item">Портфолио</a>
+                <a href="#contact"  class="top-menu__item">Связь с нами</a>
+            </div>
+        </div>
+
+        </div>
         <div class="top-block__content">
             <div class="top-block__content-left">
             <div class="top-block__title">
@@ -41,14 +66,14 @@
         </div>
     </div>
 </div>
-<div class="black-block">
+<div class="black-block" id="target">
         <div class="black-block__center">
             <span>Мы создаём сайты не ради сайтов, а <strong>ради Ваших продаж!</strong> </span>
             <span>Именно поэтому наша работа включает в себя следующее:</span>
         </div>
    
 </div>
-<div class="white-block">
+<div class="white-block" id="approach">
         <div class="white-block__content">
             <div class="white-block__content-imge">
                 <div class="white-block__content-img" style="background: url(../img/libs.png);"></div>
@@ -122,7 +147,7 @@
         </div>
     </div>
 </div>
-<div class="white-block"> 
+<div class="white-block" id="portfolio"> 
     <div class="white-block__content white-block__content_slider">
         <h2 class="h2 tac">Наше порфолио расскажет <strong>лучше</strong> о нас</h2>
         <div class="slider__wrap">
@@ -159,7 +184,7 @@
         </div> 
     </div>
 </div>
-<div class="white-block"> 
+<div class="white-block" id="contact"> 
     <div class="form">
        <h2 class="h2 tac">Есть вопросы? Напишите нам!</h2> 
        <div class="form__box">
