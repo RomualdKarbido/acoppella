@@ -1,4 +1,4 @@
-.black-block{
+.black-block {
 	background: @black;
 	height: 100vh; 
 	display: flex;
@@ -79,5 +79,24 @@
 			}
 		}
 
+	}
+}
+@media (max-width: 1200px) {
+	.black-block {
+		&__content {
+			width: 100%;
+			padding-right: 40px;
+			padding-left: 40px;
+			box-sizing: border-box;
+			&-imge {
+				flex:  0 0 400;
+				margin-right: 100px;
+			}
+			&-img {
+				background-size: cover !important; 
+				width: 400px;
+				height: 400px;
+			}
+		}
 	}
 }

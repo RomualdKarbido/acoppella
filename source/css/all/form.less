@@ -1,6 +1,5 @@
 .form {
-	width: 1220px;
-	margin-left: -20px;
+	width: 1200px;
 	position: relative;
 	margin: 0 auto;
 	&__box {
@@ -36,4 +35,17 @@
 		.clearfix;
 	}
 
+}
+
+@media (max-width: 1200px) {
+	.form {
+		width: 100%;
+		box-sizing: border-box;
+		&__box {
+			padding: 90px 30px;
+		}
+		&__btn {
+			width: 685px;
+		}
+	}
 }
