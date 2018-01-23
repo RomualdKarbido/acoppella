@@ -6,16 +6,19 @@
 	font-family: 'Roboto', sans-serif;
 
 	&__center {
-		width: 800px;
+		width: 820px;
 		text-align: center;
 		margin: 0 auto;
 		color: white;
 		font-size: 48px;
 		font-weight: 100;
-		line-height: 1.4; 
+		
+		letter-spacing: 1.2px;
 		span {
 			display: block; 
-			margin-bottom: 60px;
+			margin-bottom: 55px;
+			line-height: 1.2;
+			letter-spacing: 1.2px;
 			strong {
 				color: @ellow;
 				font-weight: 500;
@@ -25,15 +28,12 @@
 	}
 	&__content{
 		width: 1200px;
-		
 		margin: 0 auto;
 		color: white;
-	
 		font-weight: 100;
 		line-height: 1.4;
 		display: flex;
 		align-items: center;
-
 		span {
 			display: block; 
 			margin-bottom: 60px;
@@ -55,7 +55,8 @@
 		&-title {
 			font-size: 48px;
 			line-height: 1.2;
-			margin-bottom: 60px;
+			margin-bottom: 40px;
+			letter-spacing: 1.2px;
 			strong {
 				font-weight: 500;
 			}
@@ -66,9 +67,11 @@
 		&-item {
 			font-size: 18px;
 			font-weight: 300;
-			margin-bottom: 20px;
+			margin-bottom: 17px;
 			position: relative;
-			padding-left: 30px;
+			padding-left: 20px;
+			letter-spacing: 0.5px; 
+			line-height: 1.7;
 			&:before {
 				content: "—";
 				display: inline-block;
@@ -77,6 +80,9 @@
 				left: 0px;
 
 			}
+		}
+		&-info {
+			padding-left: 70px;
 		}
 
 	}
