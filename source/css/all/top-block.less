@@ -12,18 +12,18 @@
 		&-top {
 			margin: 0 auto;
 			display: block;
-			width: 90%;
+			width: 80%;
 			display: flex;
 			justify-content: space-between;
 			box-sizing: border-box;
 		}
 	}
 	&__content {
-		width: 70%;
+		width: 1200px;
 		margin: 0 auto;
 		font-family: 'Roboto', sans-serif;
 		display: flex;
-		margin-top: 230px;
+		margin-top: 210px;
 		box-sizing: border-box;
 		&-left {
 			flex: 0 0 73%;
@@ -49,13 +49,20 @@
 		font-size: 18px;
 		line-height: 1.55;
 		width: 390px;
-		margin-bottom: 40px;
+		margin-bottom: 35px;
 		letter-spacing: 0.46px;
 		.clearfix;
 	}
 	&__logo {
 		
-		
+		background: url(../img/logo-ac.png) no-repeat;
+		width: 272px;
+		height: 20px;
+		transition: all 0.2s;
+		margin-left: 0;
+		&:hover {
+			opacity: 0.7;
+		}
 
 	}
 }
